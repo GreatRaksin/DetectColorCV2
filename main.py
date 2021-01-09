@@ -9,3 +9,6 @@ ap.add_argument('-i', '--image', required=True, help='Image path')
 args = vars(ap.parse_args())
 img_path = args['image']
 
+'''Reading image with CV2'''
+image = cv2.imread(img_path)
+
