@@ -12,3 +12,7 @@ img_path = args['image']
 '''Reading image with CV2'''
 image = cv2.imread(img_path)
 
+'''reading csv'''
+index = ['color', 'color_name', 'HEX', 'R', 'G', 'B']  # пишем заголовки к Таблице
+csv = pd.read_csv('color.csv', names=index, header=None)  # читаем csv как таблицу
+print(csv)
